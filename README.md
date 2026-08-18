@@ -22,7 +22,7 @@ chmod +x install.sh
 ### Windows (PowerShell)
 
 ```powershell
-.\install.sh
+.\install.ps1
 ```
 
 > **Nota:** En Windows necesitas WSL2 habilitado y Docker Desktop configurado para usar WSL2.
@@ -98,8 +98,9 @@ nmcli con mod "TuConexion" ipv4.ignore-auto-dns yes
 
 ```
 adguard/
-├── install.sh          # Script de instalación
-├── docker-compose.yml  # Generado por install.sh
+├── install.sh          # Script de instalación (Linux/Mac)
+├── install.ps1         # Script de instalación (Windows)
+├── docker-compose.yml  # Generado por install
 ├── workdir/            # Datos de AdGuard (generado)
 └── confdir/            # Configuración (generado)
 ```
